@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 # renkasbirthday
 # renkasbirthday.github.io
 # renkasbirthday.github.io
+# renkasbirthday.github.io
