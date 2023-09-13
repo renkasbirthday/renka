@@ -11,7 +11,7 @@ import "./styles/resets.css";
 import MouseFollower from "mouse-follower";
 import gsap from "gsap";
 import Hangman from "./components/Hangman";
-import Timeline from "./components/timeline";
+import Timeline from "./components/Timeline";
 
 MouseFollower.registerGSAP(gsap);
 
