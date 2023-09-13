@@ -1,0 +1,27 @@
+
+#root {
+  margin: 0;
+}
+
+.app {
+  position: relative;
+  width: 1280px;
+}
+
+.music {
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+}
+
+.foot {
+  height: 50px;
+  position: fixed;
+  bottom: -50px;
+}
+
+.foot p {
+  color: rgb(158, 150, 150);
+}
+

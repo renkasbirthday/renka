@@ -1,0 +1,167 @@
+.blob-wrapper {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: fit-content;
+  height: 200px;
+}
+
+.top {
+  animation: rotate 15s infinite linear;
+}
+
+.middle {
+  animation: rotate 18s infinite reverse linear;
+}
+
+.bottom {
+  animation: rotate 20s infinite linear;
+}
+
+.blobs {
+  transition: transform 5s;
+}
+
+.menu-check:not(:checked) ~ .menu {
+  opacity: 1;
+  position: absolute;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.menu-check:checked ~ .menu {
+  opacity: 0;
+  position: absolute;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.menu h2 {
+  position: absolute;
+  z-index: 99;
+  top: 60px;
+  left: 40px;
+  font-size: 3rem;
+  color: rgba(240, 255, 255, 0.6);
+}
+
+.menu-blob {
+  position: absolute;
+  top: -120px;
+  left: -90px;
+  height: 500px;
+  width: 500px;
+}
+
+.menu-check {
+  position: absolute;
+  z-index: 100;
+  top: 4%;
+  left: 20px;
+  width: 200px;
+  height: 100px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.menu-check:checked {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  content: "\274c";
+}
+
+.menu-check:checked::after {
+  font-family:cursive, sans-serif;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "\X";
+  font-size: 60px;
+  font-weight: 600;
+  color: rgba(255, 250, 250, 0.7);
+  line-height: 65px;
+  text-align: center;
+}
+
+.menu-check:not(:checked) ~ .blob {
+  position: absolute;
+  z-index: 99;
+  opacity: 0;
+  top: -120px;
+  left: -90px;
+  height: 500px;
+  width: 500px;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.menu-check:checked ~ .blob {
+  position: absolute;
+  z-index: 99;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 500px;
+}
+
+.menu-check:checked ~ .blob {
+  opacity: 1;
+}
+
+.menu-check:checked ~ .blob.one {
+  left: 0;
+  transition: all 0.4s ease 0.3s;
+}
+
+.menu-check:checked ~ .blob.two {
+  left: 285px;
+  transition: all 0.4s ease 0.2s;
+}
+
+.menu-check:checked ~ .blob.three {
+  left: calc(285px * 2);
+  transition: all 0.4s ease 0.1s;
+}
+
+.menu-check:checked ~ .blob.four {
+  left: calc(285px * 3);
+  transition: all 0.4s ease;
+}
+
+.blob a {
+  position: absolute;
+  top: 150px;
+  left: 180px;
+  width: 250px;
+  transform: translate(-50%);
+  text-decoration: none;
+  text-align: center;
+  color: azure;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+svg {
+  pointer-events: none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(100px, 100px) rotate(0deg);
+  }
+  100% {
+    transform: translate(100px, 100px) rotate(359deg);
+  }
+}

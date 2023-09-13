@@ -1,0 +1,248 @@
+.birthday-card-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #b19cd7;
+  color: rgba(196, 39, 196);
+  animation: fade-in .5s;
+}
+
+.birthday-card {
+  position: relative;
+  width: 700px;
+  height: 900px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  transition: 1s;
+}
+
+.birthday-card:hover {
+  transform: perspective(2500px) rotate(5deg) translateX(200px);
+  box-shadow: inset 100px 20px 200px rgba(0, 0, 0, 0.9),
+    0 10px 200px rgba(0, 0, 0, 0.9);
+}
+
+.birthday-card:hover .card-front {
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.25),
+    30px 0 50px rgba(0, 0, 0, 0.4);
+  transform: rotateY(-160deg);
+}
+
+.birthday-card:hover .happy {
+  opacity: 0;
+}
+
+.birthday-card:hover img {
+  opacity: 1;
+}
+
+.card-front {
+  position: relative;
+  background-color: #fff;
+  outline: 1px solid rgb(105, 101, 101);
+  width: 700px;
+  height: 900px;
+  overflow: hidden;
+  transform-origin: left;
+  transition: all 0.6s ease;
+}
+
+.happy {
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  padding: 5px;
+  font-size: 4.7rem;
+  /* background-image: linear-gradient(120deg, #7e20dd 0%, #636160 100%); */
+  backface-visibility: visible;
+  transition: all .3s ease;
+}
+
+.balloons {
+  position: absolute;
+  width: 100%;
+}
+
+.balloon-one,
+.balloon-two,
+.balloon-three,
+.balloon-four {
+  position: absolute;
+  width: 215px;
+  height: 245px;
+  border-radius: 50%;
+  border: 1px solid rgb(17, 17, 17);
+}
+
+.balloon-one {
+  background-color: rgb(239, 71, 111, 0.7);
+  left: -10px;
+  top: 80px;
+}
+
+.balloon-two {
+  background-color: rgb(6, 214, 160, 0.7);
+  left: 170px;
+  top: 160px;
+}
+
+.balloon-three {
+  background-color: rgb(255, 209, 102, 0.7);
+  left: 350px;
+  top: 300px;
+}
+
+.balloon-four {
+  background-color: rgb(17, 138, 178, 0.7);
+  right: -10px;
+  top: 50px;
+}
+
+.balloon-one:before,
+.balloon-two:before,
+.balloon-three:before,
+.balloon-four:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 380px;
+  background-color: #271f0d;
+  top: 242px;
+  left: 112px;
+}
+
+.balloon-one:after,
+.balloon-two:after,
+.balloon-three:after,
+.balloon-four:after {
+  content: "";
+  position: absolute;
+  border-right: 14px solid transparent;
+  border-left: 14px solid transparent;
+  top: 242px;
+  left: 99px;
+}
+
+.balloon-one:after {
+  border-bottom: 10px solid #ef476f;
+}
+
+.balloon-two:after {
+  border-bottom: 10px solid #06d6a0;
+}
+
+.balloon-three:after {
+  border-bottom: 10px solid #ffd166;
+}
+
+.balloon-four:after {
+  border-bottom: 10px solid #118ab2;
+}
+
+.card-inside {
+  position: absolute;
+  background-color: #fff;
+  width: 700px;
+  height: 900px;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2), 0 10px 200px rgba(0, 0, 0, 0.9);
+}
+
+p {
+  margin: 25px 18px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.name {
+  position: absolute;
+  left: 150px;
+  top: 200px;
+  color: #333;
+}
+
+.end {
+  font-family: cursive;
+}
+
+.img-wrapper {
+  position: absolute;
+  z-index: 11;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 200px;
+  aspect-ratio: 1;
+  border-radius: 30%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  opacity: 0;
+  width: 200px;
+  transition: all .8s ease;
+}
+
+.present-container {
+  position: absolute;
+  bottom: 40px;
+  right: 40px
+}
+
+.present-button {
+  width: 280px;
+  height: 210px;
+  font-size:120px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.present-button:hover {
+  background-color: #eab4f5;
+}
+
+.open {
+  position: relative;
+  position: absolute;
+  bottom: 14px;
+  left: 30px;
+  font-size: 2rem;
+  color: #ab10d1;
+}
+
+.open .icon {
+  position: absolute;
+  top: 2px;
+  left: 250px;
+  font-size: 40px;
+}
+
+.confetti-left {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+
+.confetti-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  } 100% {
+    opacity: 1;
+  }
+}
