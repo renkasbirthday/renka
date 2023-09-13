@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useCallback, useEffect, useState } from 'react';
-import words from '../wordList.json';
+import words from '../wordlist.json';
 import HangmanDraw from './HangmanDraw';
 import HangmanWord from './HangmanWord';
 import Keyboard from './Keyboard';
