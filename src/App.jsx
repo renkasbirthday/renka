@@ -54,7 +54,7 @@ const cursor = new MouseFollower({
   hideMediaTimeout: 300
 });
 
-cursor.setImg('src/images/bunny1.svg');
+cursor.setImg('bunny1.svg');
 
 function App() {
 

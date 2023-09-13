@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import classnames from "classnames";
-import heart from "/src/images/heart.jpg";
+import heart from "/heart.jpg";
 import "../styles/memorycard.css";
 
 export default function MemoryCard({ onClick, card, index, isInactive, isFlipped, isDisabled }) {

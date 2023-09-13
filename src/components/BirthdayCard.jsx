@@ -33,9 +33,9 @@ export default function BirthdayCard() {
   };
 
   const partyHorn = new Audio(
-    "src/audio/mixkit-happy-party-horn-sound-530.wav"
+    "mixkit-happy-party-horn-sound-530.wav"
   );
-  const birthdaySong = new Audio("src/audio/birthday.mp3");
+  const birthdaySong = new Audio("birthday.mp3");
 
   return (
     <div className="birthday-card-wrapper">
