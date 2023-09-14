@@ -80,7 +80,7 @@
 }
 
 .menu-check:checked::after {
-  font-family:cursive, sans-serif;
+  font-family: cursive, sans-serif;
   position: absolute;
   top: 0;
   bottom: 0;

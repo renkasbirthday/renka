@@ -1,9 +1,55 @@
 .hangman-wrapper {
+  display: flex;
+  align-items: center;
   height: 100vh;
   background-color: #dbeafe;
   background-color: #e0e7ff;
   background-color: #ddd6fe;
   animation: fade-in .5s ;
+}
+
+.dog-wrapper {
+  position: relative;
+  position: absolute;
+  width: 200px;
+  right: 0px;
+}
+
+.dog-gif {
+  object-fit: cover;
+  object-position: left;
+  pointer-events: none;
+  border: none;
+}
+
+.dog-words {
+  position: absolute;
+  color: #000000;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.dialog-2{
+  height: 80%;
+  width: 120%;
+  background-color: white;
+  position: absolute;
+  top: -40%;
+  left: -90%;
+  border-radius: 10%;
+  right: 0;
+}
+
+.right-point{
+width: 0;
+height: 0;
+border-left: 2vh solid transparent;
+border-right: 1vh solid transparent;
+border-top: 8vh solid white;
+position: absolute;
+top: 25%;
+right: -5%;
+transform: rotate(-60deg);
 }
 
 .hangman {
@@ -16,12 +62,15 @@
 }
 
 .keyboard-wrapper {
-  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .keyboard {
+  width: 90%;
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-columns: repeat(10, minmax(0, 1fr));
   gap: 0.25rem;
 }
 

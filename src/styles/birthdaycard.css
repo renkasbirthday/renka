@@ -8,12 +8,13 @@
   background-color: #b19cd7;
   color: rgba(196, 39, 196);
   animation: fade-in .5s;
+  overflow: hidden;
 }
 
 .birthday-card {
   position: relative;
-  width: 700px;
-  height: 900px;
+  width: 550px;
+  height: 750px;
   cursor: pointer;
   transform-style: preserve-3d;
   transform: perspective(2500px);
@@ -21,7 +22,7 @@
 }
 
 .birthday-card:hover {
-  transform: perspective(2500px) rotate(5deg) translateX(200px);
+  transform: perspective(2500px) rotate(5deg) translateX(300px);
   box-shadow: inset 100px 20px 200px rgba(0, 0, 0, 0.9),
     0 10px 200px rgba(0, 0, 0, 0.9);
 }
@@ -44,8 +45,8 @@
   position: relative;
   background-color: #fff;
   outline: 1px solid rgb(105, 101, 101);
-  width: 700px;
-  height: 900px;
+  width: 550px;
+  height: 750px;
   overflow: hidden;
   transform-origin: left;
   transition: all 0.6s ease;
@@ -80,25 +81,25 @@
 .balloon-one {
   background-color: rgb(239, 71, 111, 0.7);
   left: -10px;
-  top: 80px;
+  top: 00px;
 }
 
 .balloon-two {
   background-color: rgb(6, 214, 160, 0.7);
-  left: 170px;
+  left: 120px;
   top: 160px;
 }
 
 .balloon-three {
   background-color: rgb(255, 209, 102, 0.7);
-  left: 350px;
-  top: 300px;
+  right: 20px;
+  top: 150px;
 }
 
 .balloon-four {
   background-color: rgb(17, 138, 178, 0.7);
   right: -10px;
-  top: 50px;
+  top: -90px;
 }
 
 .balloon-one:before,
@@ -145,17 +146,17 @@
 .card-inside {
   position: absolute;
   background-color: #fff;
-  width: 700px;
-  height: 900px;
+  width: 550px;
+  height: 750px;
   z-index: -1;
   left: 0;
   top: 0;
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2), 0 10px 200px rgba(0, 0, 0, 0.9);
 }
 
-p {
+.birthday-card p:not(.open) {
   margin: 25px 18px;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #333;
 }
 
@@ -168,25 +169,6 @@ p {
 
 .end {
   font-family: cursive;
-}
-
-.img-wrapper {
-  position: absolute;
-  z-index: 11;
-  top: 15px;
-  left: 50%;
-  transform: translate(-50%);
-  width: 200px;
-  aspect-ratio: 1;
-  border-radius: 30%;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-.img-wrapper img {
-  opacity: 0;
-  width: 200px;
-  transition: all .8s ease;
 }
 
 .present-container {
@@ -214,16 +196,16 @@ p {
 .open {
   position: relative;
   position: absolute;
-  bottom: 14px;
-  left: 30px;
-  font-size: 2rem;
+  bottom: 22px;
+  left: 20px;
+  font-size: 1.4rem;
   color: #ab10d1;
 }
 
 .open .icon {
   position: absolute;
   top: 2px;
-  left: 250px;
+  left: 170px;
   font-size: 40px;
 }
 
