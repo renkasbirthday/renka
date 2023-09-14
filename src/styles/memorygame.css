@@ -15,30 +15,24 @@
 
 .memory-game h2 {
   font-size: 3rem;
-  margin-bottom: 20px;
 }
 
 .memory-game header {
   position: relative;
   width: 100%;
   text-align: center;
-  margin-bottom: 8px;
 }
 
 .memory-game header > div {
   font-size: 15px;
   width: 324px;
   text-align: center;
-  margin: 0 auto;
 }
 
 .memory-game footer {
   width: 660px;
   position: relative;
-  margin: 0 auto;
-  padding: 10px 4px;
-  margin-top: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .memory-game footer .score {
@@ -64,9 +58,10 @@
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   align-items: stretch;
-  gap: 1rem;
-  width:900px;
-  height: 700px;
+  column-gap: 1.3rem;
+  row-gap: .6rem;
+  width: 780px;
+  height: 630px;
   border-radius: 10px;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -74,8 +69,8 @@
 }
 
 .restart-btn {
-  width: 400px;
-  height: 70px;
+  width: 300px;
+  height: 60px;
   border-radius: 10px;
   border: none;
   background-color: #8162bb;
