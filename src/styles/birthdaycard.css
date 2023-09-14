@@ -13,8 +13,8 @@
 
 .birthday-card {
   position: relative;
-  width: 550px;
-  height: 750px;
+  width: 500px;
+  height: 700px;
   cursor: pointer;
   transform-style: preserve-3d;
   transform: perspective(2500px);
@@ -22,7 +22,7 @@
 }
 
 .birthday-card:hover {
-  transform: perspective(2500px) rotate(5deg) translateX(300px);
+  transform: perspective(2500px) rotate(5deg) translateX(270px);
   box-shadow: inset 100px 20px 200px rgba(0, 0, 0, 0.9),
     0 10px 200px rgba(0, 0, 0, 0.9);
 }
@@ -45,8 +45,8 @@
   position: relative;
   background-color: #fff;
   outline: 1px solid rgb(105, 101, 101);
-  width: 550px;
-  height: 750px;
+  width: 500px;
+  height: 700px;
   overflow: hidden;
   transform-origin: left;
   transition: all 0.6s ease;
@@ -99,7 +99,7 @@
 .balloon-four {
   background-color: rgb(17, 138, 178, 0.7);
   right: -10px;
-  top: -90px;
+  top: -50px;
 }
 
 .balloon-one:before,
@@ -146,8 +146,8 @@
 .card-inside {
   position: absolute;
   background-color: #fff;
-  width: 550px;
-  height: 750px;
+  width: 500px;
+  height: 700px;
   z-index: -1;
   left: 0;
   top: 0;
@@ -178,8 +178,8 @@
 }
 
 .present-button {
-  width: 280px;
-  height: 210px;
+  width: 200px;
+  height: 180px;
   font-size:120px;
   text-align: center;
   border: none;

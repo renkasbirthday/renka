@@ -14,7 +14,7 @@
 }
 
 .memory-game h2 {
-  font-size: 5rem;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
@@ -38,7 +38,7 @@
   margin: 0 auto;
   padding: 10px 4px;
   margin-top: 10px;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .memory-game footer .score {
@@ -65,8 +65,8 @@
   justify-items: center;
   align-items: stretch;
   gap: 1rem;
-  width: 1040px;
-  height: 960px;
+  width:900px;
+  height: 700px;
   border-radius: 10px;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,

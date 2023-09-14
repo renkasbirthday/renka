@@ -11,8 +11,9 @@
 .dog-wrapper {
   position: relative;
   position: absolute;
+  left: 150px;
   width: 200px;
-  right: 0px;
+  right: 30px;
 }
 
 .dog-gif {
@@ -20,13 +21,15 @@
   object-position: left;
   pointer-events: none;
   border: none;
+  transform: rotateY(180deg);
 }
 
 .dog-words {
   position: absolute;
   color: #000000;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 .dialog-2{
@@ -34,8 +37,8 @@
   width: 120%;
   background-color: white;
   position: absolute;
-  top: -40%;
-  left: -90%;
+  top: -60%;
+  left: -60%;
   border-radius: 10%;
   right: 0;
 }
@@ -44,17 +47,17 @@
 width: 0;
 height: 0;
 border-left: 2vh solid transparent;
-border-right: 1vh solid transparent;
+border-right: 2vh solid transparent;
 border-top: 8vh solid white;
 position: absolute;
-top: 25%;
+top: 55%;
 right: -5%;
 transform: rotate(-60deg);
 }
 
 .hangman {
   display: flex;
-  padding-top: 3rem;
+  padding-top: 2rem;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
@@ -70,7 +73,7 @@ transform: rotate(-60deg);
 .keyboard {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(10, minmax(0, 1fr));
+  grid-template-columns: repeat(13, minmax(0, 1fr));
   gap: 0.25rem;
 }
 

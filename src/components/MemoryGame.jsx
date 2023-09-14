@@ -13,27 +13,27 @@ import "../styles/memorygame.css";
 const uniqueCardsArray = [
   {
     type: "pic-one",
-    image: 'pic1.jpg'
+    image: 'IMG_3861.jpg'
   },
   {
     type: "pic-two",
-    image: 'j1.png'
+    image: 'IMG_4098.jpg'
   },
   {
     type: "pic-three",
-    image: 'pic2.jpg'
+    image: 'IMG_4257.jpg'
   },
   {
     type: "pic-four",
-    image: 'renka.jpg'
+    image: 'IMG_0094.jpg'
   },
   {
     type: "pic-five",
-    image: 'kitty.jpg'
+    image: 'IMG_3688.jpg'
   },
   {
     type: "pic-six",
-    image: 'me.jpg'
+    image: 'IMG_0718.jpg'
   },
 ];
 

@@ -103,10 +103,7 @@ export default function Hangman() {
         )}
       </div>
       <div className="dog-wrapper">
-        <iframe
-          className="dog-gif"
-          src="https://giphy.com/embed/31891laXVKpENwGrTz"
-        ></iframe>
+        <img src="Xqg8.gif" alt="" />
         <div className="dialog-2">
           <div className="right-point"></div>
           <p className="dog-words">
